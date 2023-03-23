@@ -11,6 +11,9 @@ function App() {
         <ContactsList setSelectedUser={setSelectedUser} />
         <ContactProfile selectedUser={selectedUser} />
       </div>
+      <a href='https://github.com/amadywr/contacts-app'>
+        Click here for source code
+      </a>
     </div>
   )
 }
