@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.main-div-wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-div {
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+}
+
+.contacts-list-div {
+  width: 30%;
+  height: 100%;
+  padding: 20px;
+  background-color: rgba(47, 33, 29, 0.8);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contacts-list-div h1 {
+  color: #dfdddd;
+  font-weight: 800;
+}
+
+.contact-search-div-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.contacts-list-inner-div {
+  overflow: scroll;
+}
+
+.contact-names {
+  color: #dfdddd;
+  margin: 10px 0;
+  padding: 10px 10px;
+}
+
+.contact-names:hover {
+  cursor: pointer;
+  background-color: #2f211d;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.contact-profile-div {
+  width: 70%;
+  height: 100%;
+  background-color: #2f211d;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 40px 20px;
+}
+
+.contact-profile-div-NoUser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #dfdddd;
+}
+
+.contact-profile-inner-div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.profile-top-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #dfdddd;
+  gap: 20px;
+}
+
+.profile-middle-div {
+  display: flex;
+  justify-content: center;
+
+  gap: 30px;
+  color: #dfdddd;
+}
+
+.profile-middle-div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+}
+
+.profile-middle-div-icons {
+  padding: 5px;
+  border-radius: 50%;
+  size: 50;
+}
+
+.profile-middle-div-icons:hover {
+  cursor: pointer;
+  background-color: #594e4a;
+}
+
+.profile-bottom-div {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.profile-bottom-div-personal {
+  display: flex;
+  gap: 10px;
+}
+
+.profile-bottom-div-company {
+  background-color: blue;
+}
+
+.profile-bottom-div-personal-left {
+  text-align: right;
+  color: #a19b9a;
+}
+
+.profile-bottom-div-personal-right {
+  text-align: left;
+  color: #dfdddd;
+}
+
+.profile-bottom-div p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Webkit */
+::-webkit-scrollbar {
+  background-color: #594e4a;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2f211d;
+}
+
+/* Firefox */
+::-moz-scrollbar {
+  background-color: #594e4a;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: #2f211d;
+}
+
+@media (max-width: 930px) {
+  .contacts-list-div h1 {
+    font-size: 26px;
+  }
+  .contact-names {
+    font-size: 12px;
+  }
+
+  .contact-profile-div p {
+    font-size: 12px;
+  }
+
+  .contact-profile-div h1 {
+    font-size: 26px;
+  }
+
+  .contacts-list-div {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 700px) {
+  .profile-bottom-div {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 10px;
+    gap: 20px;
+  }
+
+  .contact-profile-inner-div {
+    gap: 20px;
+  }
+}
